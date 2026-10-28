@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B152D">
+<meta name="robots" content="noindex, nofollow">
+<title>ماشین‌حساب هوشمند هومکس</title>
+<link rel="icon" href="data:,">
+<link rel="preload" href="Vazirmatn-subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="hommex.svg" width="86" height="28" alt="هومکس">
+  <span class="badge">نسخه‌ی نمایشی</span>
+</header>
+<main class="calc" aria-label="ماشین‌حساب هوشمند هومکس">
+  <div class="brandline"><span>ماشین‌حساب هوشمند · به اندازه</span><button class="link" id="restart" type="button">شروع دوباره</button></div>
+  <section class="lcd" id="lcd" aria-live="polite"></section>
+  <div class="keys" id="keys"></div>
+  <div class="lower" id="lower"></div>
+</main>
+<footer><span>طراحی و اجرا:</span><img src="bilanto.svg" width="96" height="20" alt="بیلانتو"></footer>
+<div class="sheet-back" id="sheet" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-t">
+    <h3 id="sheet-t">استان یا شهر</h3>
+    <input id="sheet-q" type="search" placeholder="جست‌وجو…" autocomplete="off">
+    <div class="sheet-list" id="sheet-list"></div>
+    <button class="btn btn-ghost" id="sheet-x" type="button">بستن</button>
+  </div>
+</div>
+<noscript><p>برای استفاده از ماشین‌حساب، جاوااسکریپت مرورگر باید روشن باشد.</p></noscript>
+<script src="engine.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
